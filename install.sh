@@ -107,7 +107,7 @@ msg "Downloading disk image..."
 wget -q --show-progress $URL
 echo -en "\e[1A\e[0K" #Overwrite output from wget
 FILE=$(basename $URL)
-info "Le fichier downloadé est $FILE."
+msg "Le fichier downloadé est $FILE."
 
 # Extract Home Assistant disk image
 msg "Extracting disk image..."
